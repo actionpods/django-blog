@@ -1,6 +1,8 @@
 
+
 *.pyc
 *.pyo
 *.log
 migrations/
 __pycache__/
+*.egg-info

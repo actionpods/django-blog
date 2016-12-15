@@ -1,9 +1,0 @@
-django
-easy-thumbnails
-django-ckeditor
-
-#Django Rest Framework
-#djangorestframework
-#django-tagging
-#django-filter
-#django-pygments

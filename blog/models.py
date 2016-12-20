@@ -3,14 +3,14 @@ from django.db.models import permalink
 from django.contrib.auth.models import User
 
 #CKEditor
-from ckeditor.fields import RichTextField
+from tinymce.models import HTMLField
 # Create your models here.
 
 class Blog(models.Model):
     author = models.ForeignKey(User, null=True)
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
-    body = RichTextField()
+    body = HTMLField()
     posted = models.DateTimeField(db_index=True, auto_now_add=True)
     category = models.ForeignKey('blog.Category', null=True, blank=True)
 
